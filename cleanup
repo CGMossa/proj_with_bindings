@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+trap '(
+        sleep 5
+        R CMD REMOVE projectRbindingsdummy
+      ) &' EXIT
+
+# necessary for the R CMD INSTALL proccess
+rm NAMESPACE

@@ -1,4 +1,6 @@
+#![allow(non_snake_case)]
 use extendr_api::prelude::*;
+#[allow(unused_imports)]
 use project_with_bindings::use_fancy_now;
 
 /// Return string `"Hello world!"` to R.

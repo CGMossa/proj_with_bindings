@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+touch NAMESPACE
+
+# no need to stage if already staged, and if already --no-staged-install, then it
+# is also fine
+ls .
+R CMD INSTALL --no-staged-install r
