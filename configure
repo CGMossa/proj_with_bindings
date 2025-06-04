@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# cp r/DESCRIPTION DESCRIPTION
+touch NAMESPACE
+
+# no need to stage if already staged, and if already --no-staged-install, then it
+# is also fine
+R CMD INSTALL --no-staged-install r
