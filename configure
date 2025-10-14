@@ -5,3 +5,4 @@ touch NAMESPACE
 # is also fine
 ls .
 R CMD INSTALL --no-staged-install r
+echo "done"
