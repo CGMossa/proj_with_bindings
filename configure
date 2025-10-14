@@ -1718,7 +1718,8 @@ printf "%s\n" "$as_me: Using R_HOME=$R_HOME" >&6;}
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: Running ${R_HOME}/bin/R --version" >&5
 printf "%s\n" "$as_me: Running ${R_HOME}/bin/R --version" >&6;}
 ${R_HOME}/bin/R --version || as_fn_error $? "R did not run successfully" "$LINENO" 5
-$(R_HOME)/bin/R CMD INSTALL --no-staged-install r
+${R_HOME}/bin/R --help || as_fn_error $? "R did not run successfully" "$LINENO" 5
+${R_HOME}/bin/R CMD INSTALL --no-staged-install r || as_fn_error $? "R did not run successfully" "$LINENO" 5
 
 
 cat >confcache <<\_ACEOF
