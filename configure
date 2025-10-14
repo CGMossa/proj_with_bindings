@@ -4,5 +4,5 @@ touch NAMESPACE
 # no need to stage if already staged, and if already --no-staged-install, then it
 # is also fine
 ls .
-$(R_HOME)/R CMD INSTALL --no-staged-install r
+$(R_HOME)/bin/R CMD INSTALL --no-staged-install r
 echo "done"
